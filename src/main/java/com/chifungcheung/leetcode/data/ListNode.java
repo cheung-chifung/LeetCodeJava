@@ -1,6 +1,5 @@
 package com.chifungcheung.leetcode.data;
 
-// @lc code=start
 public class ListNode {
   public int val;
   public ListNode next;

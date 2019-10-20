@@ -10,6 +10,7 @@ import com.chifungcheung.leetcode.data.ListNode;
  * [23] Merge k Sorted Lists
  */
 
+// @lc code=start
 class Solution {
     public ListNode mergeKLists(ListNode[] lists) {
         if (lists == null || lists.length == 0) {
