@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
+import com.chifungcheung.leetcode.data.TreeNode;
+
 /*
  * @lc app=leetcode id=144 lang=java
  *

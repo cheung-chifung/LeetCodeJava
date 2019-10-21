@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.Stack;
 import java.util.stream.Collectors;
 
+import com.chifungcheung.leetcode.data.TreeNode;
+
 /*
  * @lc app=leetcode id=113 lang=java
  *
