@@ -1,10 +1,5 @@
 package com.chifungcheung.leetcode.solutions.s538;
 
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
-
-import java.util.ArrayList;
-
 import com.chifungcheung.leetcode.data.TreeNode;
 
 import org.junit.Test;
