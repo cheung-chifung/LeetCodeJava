@@ -1,8 +1,5 @@
 package com.chifungcheung.leetcode.solutions.s117;
 
-import java.util.ArrayDeque;
-import java.util.Queue;
-
 import com.chifungcheung.leetcode.data.tree.Node;
 
 /*
