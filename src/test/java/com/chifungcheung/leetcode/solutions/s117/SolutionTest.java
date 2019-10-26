@@ -1,6 +1,6 @@
 package com.chifungcheung.leetcode.solutions.s117;
 
-import com.chifungcheung.leetcode.data.Node;
+import com.chifungcheung.leetcode.data.tree.Node;
 
 import org.junit.Test;
 

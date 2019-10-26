@@ -1,6 +1,6 @@
 package com.chifungcheung.leetcode.solutions.s116;
 
-import com.chifungcheung.leetcode.data.Node;
+import com.chifungcheung.leetcode.data.tree.Node;
 
 /*
  * @lc app=leetcode id=116 lang=java

@@ -1,4 +1,4 @@
-package com.chifungcheung.leetcode.data;
+package com.chifungcheung.leetcode.data.tree;
 
 public class Node {
   public int val;
