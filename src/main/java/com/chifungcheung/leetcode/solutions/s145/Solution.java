@@ -24,12 +24,12 @@ class Solution {
         stack.push(root);
         while (!stack.empty()) {
             TreeNode top = stack.peek();
-            if (top.right != null) {
-                stack.push(top.right);
-                top.right = null;
-            } else if (top.left != null) {
+            if (top.left != null) {
                 stack.push(top.left);
                 top.left = null;
+            } else if (top.right != null) {
+                stack.push(top.right);
+                top.right = null;
             } else {
                 top = stack.pop();
                 ans.add(top.val);
