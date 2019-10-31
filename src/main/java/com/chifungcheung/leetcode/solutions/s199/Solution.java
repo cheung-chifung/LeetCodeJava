@@ -1,22 +1,37 @@
 package com.chifungcheung.leetcode.solutions.s199;
 
+import java.util.LinkedList;
+import java.util.List;
+
+import com.chifungcheung.leetcode.data.TreeNode;
+
 /*
- * @lc app=leetcode id=198 lang=java
+ * @lc app=leetcode id=199 lang=java
  *
- * [198] House Robber
+ * [199] Binary Tree Right Side View
  */
 
 // @lc code=start
 class Solution {
-  public int rob(int[] nums) {
-    int n = nums.length;
-    int[] d = new int[n + 2];
-    d[0] = 0;
-    d[1] = 0;
-    for (int i = 2; i < n + 2; i++) {
-      d[i] = Math.max(d[i - 2] + nums[i - 2], d[i - 1]);
+  public List<Integer> rightSideView(TreeNode root) {
+    List<Integer> ans = new LinkedList<>();
+    dfs(root, 1, ans);
+    return ans;
+  }
+
+  private void dfs(TreeNode root, int depth, List<Integer> ans) {
+    if (root == null) {
+      return;
     }
-    return d[n + 1];
+
+    if (ans.size() < depth) {
+      ans.add(null);
+    }
+
+    ans.set(depth - 1, root.val);
+
+    dfs(root.left, depth + 1, ans);
+    dfs(root.right, depth + 1, ans);
   }
 }
 // @lc code=end

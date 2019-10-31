@@ -1,4 +1,4 @@
-package com.chifungcheung.leetcode.solutions.s199;
+package com.chifungcheung.leetcode.solutions.s198;
 
 import static org.junit.Assert.assertEquals;
 
