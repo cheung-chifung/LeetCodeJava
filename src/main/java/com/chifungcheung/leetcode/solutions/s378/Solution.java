@@ -38,15 +38,6 @@ class Solution {
       Selection sel = sels.values().iterator().next();
       return matrix[sel.row][sel.start + k - 1];
     }
-    if (k == 1) {
-      List<Selection> sorted = sels.values().stream()
-          .sorted((o1, o2) -> matrix[o1.row][o1.start] - matrix[o2.row][o2.start]).collect(Collectors.toList());
-      Selection minSel = sorted.get(0);
-      if (minSel != null) {
-        return matrix[minSel.row][minSel.start];
-      }
-      return -1;
-    }
 
     int min = Integer.MAX_VALUE;
     int minP = Integer.MIN_VALUE;
@@ -54,6 +45,13 @@ class Solution {
     if (k < n) {
       List<Selection> sorted = sels.values().stream()
           .sorted((o1, o2) -> matrix[o1.row][o1.start] - matrix[o2.row][o2.start]).collect(Collectors.toList());
+      if (k == 1) {
+        minSel = sorted.get(0);
+        if (minSel != null) {
+          return matrix[minSel.row][minSel.start];
+        }
+        return -1;
+      }
       minSel = sorted.get(0);
       minP = 1;
     } else {
