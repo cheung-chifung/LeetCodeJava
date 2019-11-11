@@ -1,13 +1,5 @@
 package com.chifungcheung.leetcode.solutions.s92;
 
-import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertArrayEquals;
-import static org.junit.Assert.assertThat;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 import com.chifungcheung.leetcode.data.ListNode;
 import com.chifungcheung.leetcode.data.ListNodeAssert;
 
